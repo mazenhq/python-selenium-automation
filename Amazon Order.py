@@ -4,17 +4,14 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from time import sleep
 
+
 @given('Open amazon main page')
 def open_amazon(context):
     context.driver.get('https://www.amazon.com/')
 
-
-
 @when('Click on Order icon')
 def click_order(context):
     context.driver.find_element(By.XPATH, "//a[@href='/gp/css/order-history?ref_=nav_orders_first']").click()
-
-
 
 @then('Verify Sign in page shown')
 def Verify_sign_in_shown(context):

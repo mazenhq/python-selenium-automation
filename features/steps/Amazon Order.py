@@ -4,9 +4,9 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from time import sleep
 
-@given('Open amazon main page')
-def open_amazon(context):
-    context.driver.get('https://www.amazon.com/')
+#@given('Open amazon main page')
+#def open_amazon(context):
+#    context.driver.get('https://www.amazon.com/')
 
 
 
