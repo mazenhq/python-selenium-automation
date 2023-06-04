@@ -30,9 +30,3 @@ def verify_found_results_text(context, search_word):
         f'Expected query not in {context.driver.current_url.lower()}'
 
 
-@given("Open amazon main page")
-def step_impl(context):
-    """
-    :type context: behave.runner.Context
-    """
-    raise NotImplementedError(u'STEP: Given Open amazon main page')
