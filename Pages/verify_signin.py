@@ -1,7 +1,8 @@
 from selenium.webdriver.common.by import By
 from Pages.base_page import Page
-RESULT_TEXT = (By.XPATH, "//h1[@class='a-spacing-small']")
+
 class VerifySignin(Page):
+    RESULT_TEXT = (By.XPATH, "//h1[@class='a-spacing-small']")
 
     def signin(self):
         expected_text = 'Sign in'

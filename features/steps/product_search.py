@@ -6,16 +6,23 @@ from time import sleep
 SEARCH_INPUT = (By.NAME, 'q')
 SEARCH_SUBMIT = (By.NAME, 'btnK')
 
+@given('Open amazon Fashion')
+def amazon_fashion(context):
+    context.app.header.amazon_fashion()
 
-
-
+@when('Select department fashion')
+def dept_fashion(context):
+    context.app.header.select_dept()
+@when('Hover over New arrivals')
+def new_arrivals(context):
+    context.app.header.hover_new_arrivals()
 
 @when('Input {search_word} into search field')
 def input_search(context, search_word):
     search = context.driver.find_element(*SEARCH_INPUT)
     search.clear()
     search.send_keys(search_word)
-    sleep(4)
+    sleep(5)
 
 
 @when('Click on search icon')

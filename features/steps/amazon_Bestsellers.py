@@ -1,6 +1,6 @@
 import selectors
 
-from lib2to3.fixes.fix_input import context
+
 
 from behave import *
 from selenium.webdriver.common import by
